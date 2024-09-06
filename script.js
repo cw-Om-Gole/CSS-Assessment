@@ -138,7 +138,10 @@ form.addEventListener("submit", (event) => {
                 toast.classList.add('none');
                 toast.classList.remove('toast');
 
-                
+
+                formElements.forEach(element => {
+                    element.disabled = false;
+                });
             }, 3000);
         
         }
